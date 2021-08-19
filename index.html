@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple webpage to play Rock, Paper, Scissors, Lizard, Spock">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+        <h2>The arrows show what beats what.</h2>
+    </header>
+    
+    <div class="game-area">
+        <img src="assets/images/rock-paper-scissor-lizard-spock.png" alt="Game Instruction Picture">
+        <button data-type="scissors" class="btn-invis btn-scissors">Scissors</button>
+        <button data-type="spock" class="btn-invis btn-spock">Spock</button>
+        <button data-type="paper" class="btn-invis btn-paper">Paper</button>
+        <button data-type="lizard" class="btn-invis btn-lizard">Lizard</button>
+        <button data-type="rock" class="btn-invis btn-rock">Rock</button>
+            
+    </div>
+    <div class="score-area">
+        
+        <span >Your score: </span>
+        <span id="score-you">0</span>
+        <span >Computer score: </span>
+        <span id="score-computer">0</span>
+        <br>
+        <span>Best of: </span>
+        <span id="best-of">1</span>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

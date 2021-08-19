@@ -1,0 +1,68 @@
+h1, h2, span{
+    font-family: 'Russo One', sans-serif;
+    float: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.game-area{
+    position: relative;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.game-area img{
+    width: 100%;
+    height: auto;
+}
+
+.score-area{
+    position: relative;
+    width: 90vw;
+    height: 20vw;
+    text-align: center;
+}
+
+.btn-invis{
+    font-family: 'Russo One', sans-serif;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    border: none;
+    opacity: 0;
+}
+
+.btn-invis:hover{
+    opacity: 1;
+    background: rgba(0,0,0,0);
+}
+
+.btn-scissors{
+    position:absolute;
+    top: 11%;
+    left: 43%;
+}
+
+.btn-spock{
+    position:absolute;
+    top: 32%;
+    left: 27%;
+}
+
+.btn-paper{
+    position:absolute;
+    top: 32%;
+    right: 27%;
+}
+
+.btn-lizard{
+    position:absolute;
+    top: 66%;
+    left: 33%;
+}
+
+.btn-rock{
+    position:absolute;
+    top: 66%;
+    right: 33%;
+}
