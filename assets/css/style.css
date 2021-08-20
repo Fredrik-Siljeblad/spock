@@ -66,3 +66,15 @@ h1, h2, span{
     top: 66%;
     right: 33%;
 }
+
+#player-move{
+    position:absolute;
+    top: 15%;
+    left: 10%;
+}
+
+#computer-move{
+    position:absolute;
+    top: 15%;
+    right: 10%;
+}

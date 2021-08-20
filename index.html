@@ -15,16 +15,18 @@
 <body>
     <header>
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-        <h2>The arrows show what beats what.</h2>
+        <h2 id="instructions">The arrows show what beats what.</h2>
     </header>
     
     <div class="game-area">
         <img src="assets/images/rock-paper-scissor-lizard-spock.png" alt="Game Instruction Picture">
-        <button data-type="scissors" class="btn-invis btn-scissors">Scissors</button>
-        <button data-type="spock" class="btn-invis btn-spock">Spock</button>
-        <button data-type="paper" class="btn-invis btn-paper">Paper</button>
-        <button data-type="lizard" class="btn-invis btn-lizard">Lizard</button>
-        <button data-type="rock" class="btn-invis btn-rock">Rock</button>
+        <button id="scissors" data-type="scissors" class="btn-invis btn-scissors">Scissors</button>
+        <button id="spock" data-type="spock" class="btn-invis btn-spock">Spock</button>
+        <button id="paper" data-type="paper" class="btn-invis btn-paper">Paper</button>
+        <button id="lizard" data-type="lizard" class="btn-invis btn-lizard">Lizard</button>
+        <button id="rock" data-type="rock" class="btn-invis btn-rock">Rock</button>
+        <span id="player-move">None</span>
+        <span id="computer-move">None</span>
             
     </div>
     <div class="score-area">
@@ -34,8 +36,9 @@
         <span >Computer score: </span>
         <span id="score-computer">0</span>
         <br>
-        <span>Best of: </span>
-        <span id="best-of">1</span>
+        <button data-type="best-of"><span>Best of: </span><span id="best-of">1</span></button>
+       
+        
     </div>
 
     <script src="assets/js/script.js"></script>
