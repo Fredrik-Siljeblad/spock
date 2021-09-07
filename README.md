@@ -1,104 +1,130 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Spock
+Spock is a simple webpage that allows the player to play Rock-Paper-Scissors-Lizard-Spock against the computer.
 
-Welcome USER_NAME,
+[Website](https://fredrik-siljeblad.github.io/spock/index.html)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+![Presentation](/assets/images/Presentation.PNG)
 
-## Gitpod Reminders
+## User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+-   ### User stories
 
-`python3 -m http.server`
+    -   #### First Time Visitor Goals
+        
+        1. The goal is for the page to be completely self-explanatory.
+        2. The background image explains the rules of the game.
+        3. The interaction with the buttons explain how it is played.
 
-A blue button should appear to click: _Make Public_,
+    -   #### Returning Visitor Goals
 
-Another blue button should appear to click: _Open Browser_.
+       1. There is no specific goals for returning visitors that doesn't already apply to first time visitors.
+       
+    -   #### Frequent User Goals
+        1. There is no specific goals for frequent users that doesn't already apply to first time visitors.
+        
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+-   ### Design
+    -   #### Color Scheme
+        -   For simplicity's sake I chose black text on white background.
+    -   #### Typography
+        -   As main font I have chosen 'Russo One', with Sans Serif as a fallback font family. 'Russo One' looks a bit like
+        the fonts used in the 'Star Trek'.
+    -   #### Imagery
+        -   I found an image on [Big Bang Theory Fandom Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock), that I used as a background image.
 
-A blue button should appear to click: _Make Public_,
+   ### Wireframes
 
-Another blue button should appear to click: _Open Browser_.
+    -   Being a very simple set up there was no wireframing done.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## Features
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+-   Playing the game.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+-   Changing the points to which the game is played.
 
-------
+-   Resetting/Restarting the game.
 
-## Release History
+-   Responsive on all device sizes
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Languages Used
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Frameworks, Libraries & Programs Used
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Russo One' font into the style.css file which is used due to the fact that it reminds me of the font used in a lot of the 'Star Trek' franchise. Because of the 'Spock' thing.
+- [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Testing
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+-   HTML & CSS
+No errors were returned when passing any of the sites files through the validator.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+[W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- The accessibility was confirmed wih lighthouse in devtools.
+![Accessibility](/assets/images/Lighthouse.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Testing User Stories from User Experience (UX) Section
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+-   #### First Time Visitor Goals
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+     1. The goal is for the page to be completely self-explanatory.
+     2. The background image explains the rules of the game.
+     3. The interaction with the buttons explain how it is played.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+            -By clicking a move the computer makes it's answering move and the score is updated.
+            -If the score is enough to award either player an overall victory the game announces the winner.
+            -If there is an overall winner the game stops working until it is restarted.
+            -By clicking the "Best of:" button the points needed for overall victory changes, and the game restarts.
+        
+  -   #### Returning Visitor Goals
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+       1. There is no specific goals for returning visitors that doesn't already apply to first time visitors.
+       
+  -   #### Frequent User Goals
+        1. There is no specific goals for frequent users that doesn't already apply to first time visitors.
 
-------
+### Known Bugs
 
-## FAQ about the uptime script
+-   No known bugs
 
-**Why have you added this script?**
+## Deployment
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### GitHub Pages
 
-**How will this affect me?**
+The project was deployed to GitHub Pages using the following steps...
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Credits
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Content
 
-**So….?**
+-   All content was written by the developer.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Media
 
-**Can I opt out?**
+-   The rules for the game and the background image was found on [Big Bang Theory Fandom Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock).
+-   [Am I Responsive](https://ami.responsivedesign.is) website was used to create the images of 
+    the website on different screensizes.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Acknowledgements
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+-   My Mentor for continuous helpful feedback.
 
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+-   Tutor support at Code Institute for their support.
