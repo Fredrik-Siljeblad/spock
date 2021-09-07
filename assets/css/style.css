@@ -6,14 +6,17 @@ h1, h2, span{
 }
 
 .game-area{
+    text-align: center;
     position: relative;
     width: 80%;
     margin: 0px auto;
 }
 
 .game-area img{
-    width: 100%;
+    text-align: center;
+    width: 50%;
     height: auto;
+    
 }
 
 .score-area{
