@@ -34,7 +34,9 @@ function newGame() {
     turnOnButtons();
 
     // set instructions to start value
-    document.getElementById("instructions").innerText = "The arrows show what beats what.";
+    document.getElementById("instructions").innerText = 
+    "Click one of the hands to make a move. The arrows show what beats what. " +
+    "Click the button to change the best of score and reset the game.";
 }
 
 /**
