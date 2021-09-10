@@ -4,26 +4,30 @@ const moves = ["scissors", "paper", "rock", "lizard", "spock"];
 
 // Do not run the game until the DOM is loaded
 
-// Create buttons object, add listeners to all buttons
-// Add listener to the "best of"
-
 document.addEventListener("DOMContentLoaded", function () {
 
+    createButtons();
+ });
+
+
+/**
+ * Create buttons object, add listeners to all buttons
+ * Add listener to the "best of"
+ */
+function createButtons() {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "best-of") {
                 newGame();
             } else {
                 let playerChoice = this.getAttribute("data-type");
                 runGame(playerChoice);
             }
-        })
+        });
     }
- });
-
-
+}
 
 /** 
  * The function to reset the game & change best-of value
