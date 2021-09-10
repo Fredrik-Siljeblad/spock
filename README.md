@@ -30,11 +30,12 @@ Spock is a simple webpage that allows the player to play Rock-Paper-Scissors-Liz
         -   As main font I have chosen 'Russo One', with Sans Serif as a fallback font family. 'Russo One' looks a bit like
         the fonts used in the 'Star Trek'.
     -   #### Imagery
-        -   I found an image on [Big Bang Theory Fandom Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock), that I used as a background image.
+        -   I found an image on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg), that I used as a background image. 
+
+
 
    ### Wireframes
-
-    -   Being a very simple set up there was no wireframing done.
+    -   Being a very simple set up there was no wireframing done. 
 
 
 ## Features

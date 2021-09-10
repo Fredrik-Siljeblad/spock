@@ -69,13 +69,13 @@ h1, h2, span{
     right: 33%;
 }
 
-#player-move{
+.player-move{
     position:absolute;
     top: 15%;
     left: 10%;
 }
 
-#computer-move{
+.computer-move{
     position:absolute;
     top: 15%;
     right: 10%;
