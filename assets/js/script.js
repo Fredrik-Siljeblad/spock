@@ -1,3 +1,7 @@
+// Array of moves used more than once:
+
+const moves = ["scissors", "paper", "rock", "lizard", "spock"];
+
 // Do not run the game until the DOM is loaded
 
 // Create buttons object, add listeners to all buttons
@@ -19,9 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
  });
 
-// Array of moves used more than once:
 
-const moves = ["scissors", "paper", "rock", "lizard", "spock"];
 
 /** 
  * The function to reset the game & change best-of value
