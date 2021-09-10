@@ -15,7 +15,7 @@
 <body>
     <header>
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-        <h2 id="instructions">The arrows show what beats what.</h2>
+        
     </header>
     
     <div class="player-move">
@@ -44,11 +44,14 @@
         <span id="score-you">0</span>
         <span >Computer score: </span>
         <span id="score-computer">0</span>
+        <div class="best-of">    
+            <button data-type="best-of" class="best-of"><span>Best of: </span><span id="best-of">1</span></button>   
+        </div>
+        <p id="instructions">Click one of the hands to make a move. The arrows show what beats what.
+            Click the button to change the best of score and reset the game.</p>
     </div>
 
-    <div class="best-of">    
-        <button data-type="best-of" class="best-of"><span>Best of: </span><span id="best-of">1</span></button>   
-    </div>
+    
 
     <script src="assets/js/script.js"></script>
 </body>
