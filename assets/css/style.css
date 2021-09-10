@@ -5,6 +5,16 @@ h1, h2, span{
     vertical-align: middle;
 }
 
+.player-move{
+    position:relative;
+    text-align: center;
+}
+
+.computer-move{
+    position:relative;
+    text-align: center;
+}
+
 .game-area{
     text-align: center;
     position: relative;
@@ -69,14 +79,3 @@ h1, h2, span{
     right: 33%;
 }
 
-.player-move{
-    position:absolute;
-    top: 5%;
-    left: 10%;
-}
-
-.computer-move{
-    position:absolute;
-    top: 15%;
-    right: 10%;
-}
