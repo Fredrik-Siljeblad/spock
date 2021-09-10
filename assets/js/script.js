@@ -25,14 +25,8 @@ function createButtons() {
  * The function to reset the game & change best-of value
  */ 
 function newGame() {
-
     // change best-of value
-    let bestOf = parseInt(document.getElementById("best-of").innerText);
-    if (bestOf < 7) {
-        document.getElementById("best-of").innerText = bestOf + 2;
-    } else {
-        document.getElementById("best-of").innerText = 1;
-    }
+    changeBestOfValue();
     // reset points and moves
     document.getElementById("score-you").innerText = 0;
     document.getElementById("score-computer").innerText = 0;
@@ -48,6 +42,18 @@ function newGame() {
 
     // set instructions to start value
     document.getElementById("instructions").innerText = "The arrows show what beats what.";
+}
+
+/**
+ * Changes the number of points the game is played to
+ */
+function changeBestOfValue() {
+    let bestOf = parseInt(document.getElementById("best-of").innerText);
+    if (bestOf < 7) {
+        document.getElementById("best-of").innerText = bestOf + 2;
+    } else {
+        document.getElementById("best-of").innerText = 1;
+    }
 }
 
 /** 
