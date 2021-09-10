@@ -35,6 +35,14 @@ h1, h2, span{
     text-align: center;
 }
 
+.best-of{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .btn-invis{
     font-family: 'Russo One', sans-serif;
     width: 10vw;
@@ -78,4 +86,6 @@ h1, h2, span{
     top: 66%;
     right: 33%;
 }
+
+
 
