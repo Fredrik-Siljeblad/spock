@@ -41,19 +41,19 @@ h1, h2, span{
 
 .btn-scissors{
     position:absolute;
-    top: 11%;
+    top: 5%;
     left: 43%;
 }
 
 .btn-spock{
     position:absolute;
-    top: 32%;
+    top: 28%;
     left: 27%;
 }
 
 .btn-paper{
     position:absolute;
-    top: 32%;
+    top: 28%;
     right: 27%;
 }
 
