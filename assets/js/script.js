@@ -31,14 +31,21 @@ function newGame() {
     resetGame();
 
     // turn on all buttons
+    turnOnButtons();
+
+    // set instructions to start value
+    document.getElementById("instructions").innerText = "The arrows show what beats what.";
+}
+
+/**
+ * Makes the move buttons active again.
+ */
+function turnOnButtons() {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
         button.disabled = false;
     }
-
-    // set instructions to start value
-    document.getElementById("instructions").innerText = "The arrows show what beats what.";
 }
 
 /**
