@@ -2,14 +2,6 @@
 
 const moves = ["scissors", "paper", "rock", "lizard", "spock"];
 
-// Do not run the game until the DOM is loaded
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    createButtons();
- });
-
-
 /**
  * Create buttons object, add listeners to all buttons
  * Add listener to the "best of"
@@ -181,3 +173,6 @@ function endGame() {
         
     }
 }
+
+// Do not run the game until the DOM is loaded
+document.addEventListener("DOMContentLoaded", createButtons());
