@@ -27,11 +27,8 @@ function createButtons() {
 function newGame() {
     // change best-of value
     changeBestOfValue();
-    // reset points and moves
-    document.getElementById("score-you").innerText = 0;
-    document.getElementById("score-computer").innerText = 0;
-    document.getElementById("player-move").innerText = "None";
-    document.getElementById("computer-move").innerText = "None";
+    // reset the game
+    resetGame();
 
     // turn on all buttons
     let buttons = document.getElementsByTagName("button");
@@ -42,6 +39,16 @@ function newGame() {
 
     // set instructions to start value
     document.getElementById("instructions").innerText = "The arrows show what beats what.";
+}
+
+/**
+ * Resets scores and moves.
+ */
+function resetGame() {
+    document.getElementById("score-you").innerText = 0;
+    document.getElementById("score-computer").innerText = 0;
+    document.getElementById("player-move").innerText = "None";
+    document.getElementById("computer-move").innerText = "None";
 }
 
 /**
