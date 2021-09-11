@@ -1,6 +1,6 @@
 // Array of moves used more than once:
 
-const moves = ["scissors", "paper", "rock", "lizard", "spock"];
+let moves = ["scissors", "paper", "rock", "lizard", "spock"];
 
 /**
  * Create buttons object, add listeners to all buttons
@@ -133,9 +133,9 @@ function checkPoint() {
  */
 function isDraw() {
     // change player-move to move + draw
-    document.getElementById("player-move").innerText = document.getElementById("player-move").innerText + " - DRAW"
+    document.getElementById("player-move").innerText = document.getElementById("player-move").innerText + " - DRAW";
     // change computer-move to move + draw
-    document.getElementById("computer-move").innerText = document.getElementById("computer-move").innerText + " - DRAW"
+    document.getElementById("computer-move").innerText = document.getElementById("computer-move").innerText + " - DRAW";
 }
 
 /**
@@ -143,9 +143,9 @@ function isDraw() {
  */
  function isWin() {
     // change player-move to move + win
-    document.getElementById("player-move").innerText = document.getElementById("player-move").innerText + " - Win"
+    document.getElementById("player-move").innerText = document.getElementById("player-move").innerText + " - Win";
     // change computer-move to move + loss
-    document.getElementById("computer-move").innerText = document.getElementById("computer-move").innerText + " - Loss"
+    document.getElementById("computer-move").innerText = document.getElementById("computer-move").innerText + " - Loss";
     // Up score-you
     document.getElementById("score-you").innerText = parseInt(document.getElementById("score-you").innerText) + 1;
     // Check for over-all win
@@ -158,9 +158,9 @@ function isDraw() {
  */
  function isLoss() {
     // change player-move to move + loss
-    document.getElementById("player-move").innerText = document.getElementById("player-move").innerText + " - Loss"
+    document.getElementById("player-move").innerText = document.getElementById("player-move").innerText + " - Loss";
     // change computer-move to move + win
-    document.getElementById("computer-move").innerText = document.getElementById("computer-move").innerText + " - Win"
+    document.getElementById("computer-move").innerText = document.getElementById("computer-move").innerText + " - Win";
     // Up score-you
     document.getElementById("score-computer").innerText = parseInt(document.getElementById("score-computer").innerText) + 1;
     // Check for over-all win
