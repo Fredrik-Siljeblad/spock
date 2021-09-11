@@ -10,15 +10,19 @@ function createButtons() {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
-        button.addEventListener("click", function () {
-            if (this.getAttribute("data-type") === "best-of") {
-                newGame();
-            } else {
-                let playerChoice = this.getAttribute("data-type");
-                runGame(playerChoice);
-            }
-        });
+        button.addEventListener("click", addAllButtons());
     }
+}
+
+function addAllButtons() {
+    return function () {
+        if (this.getAttribute("data-type") === "best-of") {
+            newGame();
+        } else {
+            let playerChoice = this.getAttribute("data-type");
+            runGame(playerChoice);
+        }
+    };
 }
 
 /** 

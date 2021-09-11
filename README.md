@@ -66,9 +66,16 @@ Spock is a simple webpage that allows the player to play Rock-Paper-Scissors-Liz
 ## Testing
 
 -   HTML & CSS
-No errors were returned when passing any of the sites files through the validator.
+No errors were returned when passing any of the sites files through the validators.
 
 [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+
+[HTML Validator](https://www.freeformatter.com/html-validator.html)
+
+- JavaScript
+
+[ExtendsClass JavaScript Validator](https://extendsclass.com/javascript-fiddle.html)
+
 
 - The accessibility was confirmed wih lighthouse in devtools.
 ![Accessibility](/assets/images/Lighthouse.png)
