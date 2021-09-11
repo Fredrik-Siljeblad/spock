@@ -3,7 +3,7 @@ Spock is a simple webpage that allows the player to play Rock-Paper-Scissors-Liz
 
 [Website](https://fredrik-siljeblad.github.io/spock/index.html)
 
-![Presentation](/assets/images/Presentation.PNG)
+![Presentation](/assets/images/new_presentation.PNG)
 
 ## User Experience (UX)
 
@@ -34,7 +34,7 @@ Spock is a simple webpage that allows the player to play Rock-Paper-Scissors-Liz
 
 
 
-   ### Wireframes
+ -  ### Wireframes
     -   Being a very simple set up there was no wireframing done. 
 
 
