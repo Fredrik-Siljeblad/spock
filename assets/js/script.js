@@ -35,8 +35,7 @@ function newGame() {
 
     // set instructions to start value
     document.getElementById("instructions").innerText = 
-    "Click one of the hands to make a move. The arrows show what beats what. " +
-    "Click the button to change the best of score and reset the game.";
+    "Well done. Now you know this game.";
 }
 
 /**
@@ -175,9 +174,9 @@ function isDraw() {
 function endGame() {
     // change instructions to win/lose message
     if (parseInt(document.getElementById("score-you").innerText) > (parseInt(document.getElementById("best-of").innerText) / 2)) {
-        document.getElementById("instructions").innerText = "Congratulations - You are the Winner!";
+        document.getElementById("instructions").innerText = "Congratulations - You are the Winner! Click Best of to restart.";
     } else if (parseInt(document.getElementById("score-computer").innerText) > (parseInt(document.getElementById("best-of").innerText) / 2)) {
-        document.getElementById("instructions").innerText = "I am sorry, but the computer have you beaten!";
+        document.getElementById("instructions").innerText = "I am sorry, but the computer have you beaten! Click Best of to restart.";
     } else {
         return;
     }
