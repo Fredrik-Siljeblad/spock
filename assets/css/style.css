@@ -84,4 +84,12 @@ h1, h2, p, span, butto{
 }
 
 
+/* If the screen is too wide, reduce the width of the game area */
+@media screen and (min-width: 1200px){
+    .game-area{
+        width: 50%;
+        margin: 0 25%;
+    }
+}
+
 
